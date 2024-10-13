@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Game</title>
+    <link rel="stylesheet" href="assets\css\styles.css">
+</head>
+<div id="crash-history" style="display: flex; justify-content: space-around; margin-top: 10px;">
+</div>
+<body>
+    <header>
+        <h1>Crash Game</h1>
+    </header>
+    <div id="crashHistoryBar" style="margin-bottom: 10px;">
+        <!-- The crash history will be populated here dynamically -->
+    </div>
+    <button id="testCrash">Test Crash Values</button>
+
+    
+    <section class="game-container">
+        <div class="bet-section">
+            <input type="number" id="betAmount" placeholder="Enter your bet">
+            <button id="placeBet">Place Bet</button>
+        </div>
+        <div class="multiplier-display">
+            <h2 id="multiplier">Multiplier: x1.00</h2>
+        </div>
+        <div class="control-section">
+            <button id="cashOut" disabled>Cash Out</button>
+        </div>
+        <div class="result-section">
+            <h3 id="result"></h3>
+        </div>
+    </section>
+    <div id="balanceDisplay">Balance: $<span id="currentBalance">100.00</span></div>
+
+
+    <script src="assets\js\game.js"></script>
+</body>
+</html>
